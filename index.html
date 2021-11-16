@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid_layout.css">
+    <title>Grid Layout</title>
+</head>
+<body>
+    <h1>CSS Grid Layout - Display Grid</h1>
+    <hr>
+    <h2>Aula 01: display grid</h2>
+    <p>Ao usar o display grid, as configurações de container serão atribuídas para a contrução de um layout dinâmico</p>
+    <ul>
+        <li>Display Grid: Padrão</li>
+        <li>Inline-Grid: O tamanho item será conforme o maior item </li>
+    </ul>
+    <p>Para começar a definir a grade, usa-se: Grid Template Columns (usa-se Nrf ou tamanho de cada grade) e Grid Template Row (Define-se o tamanho de cada linha, quando não, será auto)</p>
+    <div class="container">
+        <div class="item">DCF Cursos 01</div>
+        <div class="item">DCF Cursos 02</div>
+        <div class="item">DCF Cursos 03</div>
+        <div class="item">DCF Cursos 04</div>
+        <div class="item">DCF Cursos 05</div>
+        <div class="item">DCF Cursos 06</div>
+        <div class="item">DCF Cursos 07</div>
+        <div class="item">DCF Cursos 08</div>
+        <div class="item">DCF Cursos 09</div>
+    </div>
+    <hr>
+    <h2>Aula 02: Grid Gap</h2>
+    <p>Espaços entre colunas e linhas</p>
+    <p>Parâmetros:</p>
+    <ul>
+        <li>Columns-gap: define o espaço entre as colunas</li>
+        <li>Row-gap: define o espaço entre as linhas</li>
+        <li>Gap: resume o row-gap e columns-gap no mesmo parâmetro (valor único vai valer para os os dois)</li>
+    </ul>
+    <div class="container02">
+        <div class="item02">DCF Cursos 01</div>
+        <div class="item02">DCF Cursos 02</div>
+        <div class="item02">DCF Cursos 03</div>
+        <div class="item02">DCF Cursos 04</div>
+        <div class="item02">DCF Cursos 05</div>
+        <div class="item02">DCF Cursos 06</div>
+        <div class="item02">DCF Cursos 07</div>
+        <div class="item02">DCF Cursos 08</div>
+        <div class="item02">DCF Cursos 09</div>
+    </div>
+    <hr>
+    <h2>Aula 03: Posição inicial e final de elementos dentro da grade</h2>
+    <p>Parâmetros:</p>
+    <ul>
+        <li>grid-columns-start: o item inicia na coluna n</li>
+        <li>grid-columns-end: o item termina na coluna n (vai até o valor, mas não o ocupa)</li>
+        <li>grid-columns: versão reduzida de <u>grid-columns-start</u> e <u>grid-columns-end</u></li>
+        <p>Pode-se usar no columns: 1/ span 3 (o item será espandido em 3 colunas)</p>
+        <li>grid-row-start: o item inicia na linha n</li>
+        <li>grid-row-end: o item termina na linha n</li>
+        <li>grid-row: versão reduzida de <u>grid-row-start</u> e <u>grid-columns-end</u></li>
+    </ul>
+    <div class="container03">
+        <div class="item03 it-grid">DCF Cursos 01</div>
+        <div class="item03">DCF Cursos 02</div>
+        <div class="item03 it-row">DCF Cursos 03</div>
+        <div class="item03 it-row2">DCF Cursos 04</div>
+        <div class="item03">DCF Cursos 05</div>
+        <div class="item03">DCF Cursos 06</div>
+        <div class="item03">DCF Cursos 07</div>
+        <div class="item03 item-spam">DCF Cursos 08</div>
+        <div class="item03 it-grid3
+        ">DCF Cursos 09</div>
+    </div>
+    <hr>
+    <h2>Aula 04: Grid Area</h2>
+    <p>A propriedade grid-area vai resumir os 4 parâmetros na seguinte ordem:</p>
+    <p>Ps: Os valores serão dados em sequência e separados por "/"</p>
+    <ul>
+        <li>grid-row-start</li>
+        <li>grid-columns-start</li>
+        <li>grid-row-end</li>
+        <li>grid-columns-end</li>
+    </ul>
+    <div class="container04">
+        <div class="item04 area">DCF Cursos 01</div>
+        <div class="item04">DCF Cursos 02</div>
+        <div class="item04">DCF Cursos 03</div>
+        <div class="item04">DCF Cursos 04</div>
+        <div class="item04">DCF Cursos 05</div>
+        <div class="item04 area2">DCF Cursos 06</div>
+        <div class="item04">DCF Cursos 07</div>
+        <div class="item04">DCF Cursos 08</div>
+        <div class="item04">DCF Cursos 09</div>
+    </div>
+    <hr>
+    <h2>Aula 05: Grid Template Area</h2>
+    <p>Propriedade que permite definir modelos de grades referenciados por nome</p>
+    <p>Inicia-se por Grid Template Areas</p>
+    <div class="container05">
+        <div class="item05 header">HEADER</div>
+        <div class="item05 main">MAIN</div>
+        <div class="item05 lateral">LATERAL</div>
+        <div class="item05 footer">FOOTER</div>
+    </div>
+</body>
+</html>
